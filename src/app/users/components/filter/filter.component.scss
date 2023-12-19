@@ -1,0 +1,24 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  padding: 20px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--text);
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  & .control {
+    flex: 0 1 25%;
+  }
+}
