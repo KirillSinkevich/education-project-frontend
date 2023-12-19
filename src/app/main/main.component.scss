@@ -3,3 +3,9 @@
   grid-template-columns: 240px auto;
   grid-template-rows: 100vh;
 }
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px 24px 0;
+}
