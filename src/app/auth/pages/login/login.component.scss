@@ -1,0 +1,50 @@
+@import '../../../../styles/theme/variables';
+
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  & tui-island {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    height: 450px;
+    background-color: white;
+  }
+
+  & .form {
+    flex-direction: column;
+    width: inherit;
+
+    tui-input-password {
+      margin-top: 25px;
+    }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 0;
+
+  & tui-input, tui-input-password {
+    width: 100%;
+  }
+
+  & .tui-island__button {
+    margin: 16px 0;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1 0;
+}

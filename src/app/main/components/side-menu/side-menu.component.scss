@@ -1,0 +1,46 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.logo {
+  margin-bottom: 32px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  &__element {
+    width: 216px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration: none;
+    padding-left: 24px;
+    transition: all 250ms ease-in-out;
+
+    &:hover {
+      background-color: var(--action-hover);
+      border-radius: 0 50px 50px 0;
+    }
+
+    & > tui-svg {
+      margin-right: 8px;
+
+      &::ng-deep > svg {
+        color: var(--text);
+      }
+    }
+
+    & + & {
+      margin-top: 16px;
+    }
+  }
+}

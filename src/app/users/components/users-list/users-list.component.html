@@ -1,0 +1,32 @@
+<tui-scrollbar>
+  <cdk-virtual-scroll-viewport
+    #viewport
+    tuiScrollable
+    class="viewport tui-zero-scrollbar"
+    [itemSize]="45"
+    [minBufferPx]="400"
+    [maxBufferPx]="500"
+  >
+    <table tuiTable [columns]="columns">
+      <thead>
+        <tr *tuiThGroup>
+          <th
+            *tuiHead="'user'"
+            tuiTh
+            [sticky]="true"
+            [style.top.px]="-viewport['_renderedContentOffset']"
+          >
+            User
+          </th>
+        </tr>
+      </thead>
+      <tbody tuiTbody>
+        <tr *cdkVirtualFor="let user of data" tuiTr>
+          <td *tuiCell="'user'" tuiTd>
+            {{user.name}}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </cdk-virtual-scroll-viewport>
+</tui-scrollbar>

@@ -1,0 +1,83 @@
+// Background
+$bg-main: #8A8D93;
+$bg-ingo: linear-gradient(0deg, #2196F3, #2196F3),
+linear-gradient(0deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88));
+
+$bg-success: linear-gradient(0deg, #4CAF50, #4CAF50),
+linear-gradient(0deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88));
+
+$bg-warning: linear-gradient(0deg, #ED6C02, #ED6C02),
+linear-gradient(0deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88));
+
+$bg-error: linear-gradient(0deg, #F44336, #F44336),
+linear-gradient(0deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88));
+
+$bg-menu-active: linear-gradient(270deg, #9155FD 0%, #C6A7FE 100%);
+
+
+
+// Theme
+$theme-primary: #9155FD;
+$theme-secondary: #8A8D93;
+$theme-info: #16B1FF;
+$theme-success: #56CA00;
+$theme-warning: #FFB400;
+$theme-error: #FF4C51;
+
+// Text
+$text: #3A3541DE;
+$text-secondary: #3A3541AD;
+$text-disabled: #3A354161;
+
+// Action
+$action-active: #3A35418A;
+$action-hover: #3A35410A;
+$action-selected: #3A354114;
+$action-disabled: #3A354142;
+$action-focus: #3A35411F;
+
+// Font
+$ff: Inter, "Helvetica Neue", sans-serif;
+
+:root {
+  --theme-primary: #9155FD;
+  --theme-secondary: #8A8D93;
+  --theme-info: #16B1FF;
+  --theme-success: #56CA00;
+  --theme-warning: #FFB400;
+  --theme-error: #FF4C51;
+
+  // Text
+  --text: #3A3541DE;
+  --text-secondary: #3A3541AD;
+  --text-disabled: #3A354161;
+
+  // Action
+  --action-active: #3A35418A;
+  --action-hover: #3A35410A;
+  --action-selected: #3A354114;
+  --action-disabled: #3A354142;
+  --action-focus: #3A35411F;
+
+  // Other
+  --other-divider: #3A35411F;
+  --other-outline-border: #3A35413B;
+  --other-input-line: #3A354138;
+  --other-overlay: #3A354180;
+  --other-snackbar-bg: #212121;
+  --other-body-bg: #F4F5FA;
+  --other-card: #FFFFFF;
+
+  // Background
+  --bg-primary: color-mix(in srgb, #9155FD, #FFFFFF 88%);
+  --bg-secondary: color-mix(in srgb, #8A8D93, #FFFFFF 88%);
+  --bg-info: color-mix(in srgb, #2196F3, #FFFFFF 88%);
+  --bg-seccess: color-mix(in srgb, #4CAF50, #FFFFFF 88%);
+  --bg-warning: color-mix(in srgb, #ED6C02, #FFFFFF 88%);
+  --bg-error: color-mix(in srgb, #F44336, #FFFFFF 88%);
+  --bg-menu-active: linear-gradient(to left, #9155FD, #C6A7FE);
+
+  // Shadow
+
+  --shadow-1: #3A35411A;
+}
