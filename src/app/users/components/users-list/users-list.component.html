@@ -9,9 +9,9 @@
   >
     <table tuiTable [columns]="columns">
       <thead>
-        <tr *tuiThGroup>
+        <tr tuiThGroup>
           <th
-            *tuiHead="'user'"
+            *tuiHead="'name'"
             tuiTh
             [sticky]="true"
             [style.top.px]="-viewport['_renderedContentOffset']"
@@ -22,7 +22,7 @@
       </thead>
       <tbody tuiTbody>
         <tr *cdkVirtualFor="let user of data" tuiTr>
-          <td *tuiCell="'user'" tuiTd>
+          <td *tuiCell="'name'" tuiTd>
             {{user.name}}
           </td>
         </tr>

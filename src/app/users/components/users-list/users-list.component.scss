@@ -1,7 +1,16 @@
 :host {
-  //background-color: var(--other-card);
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
+
+  & > tui-scrollbar {
+    height: 100%;
+
+    &::ng-deep > .t-content {
+      height: 100%;
+    }
+  }
 }
 
 table {
@@ -24,5 +33,5 @@ table {
 }
 
 .viewport {
-  height: 250px;
+  height: 100%;
 }
